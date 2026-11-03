@@ -12,7 +12,7 @@ Sample NinjaScript (C#) code showing how to build **add-ons, strategies and scan
 | File | What it does |
 |---|---|
 | `src/WealthPowerValuesLogger.cs` | Indicator that prints the live values (and plot names) of WealthPower indicators to the NinjaScript Output window — start here to see which value lives in which plot. |
-| `src/WealthPowerSampleStrategy.cs` | Minimal strategy that reads a WealthPower value as a dynamic level and enters on a cross. Educational only. |
+| `src/WealthPowerSampleStrategy.cs` | Minimal strategy that goes long on a WealthPower **Bullish** signal and short on a **Bearish** signal. Educational only. |
 
 ## Requirements
 
@@ -30,12 +30,33 @@ Sample NinjaScript (C#) code showing how to build **add-ons, strategies and scan
 
 ## Calling WealthPower from your own code
 
-Every WealthPower indicator is available as a normal NinjaScript method:
+Every WealthPower indicator is available as a normal NinjaScript method.
+**Every one of the 30 indicators publishes two public signal series: `Bullish` and `Bearish`.**
 
 ```csharp
-var trend = Wealth101TrendStarter();          // in State.DataLoaded
-double v  = trend.Values[0][0];               // plot 0, current bar
+var trend = Wealth101TrendStarter();               // in State.DataLoaded
+
+// in OnBarUpdate:
+if (trend.Bullish.IsValidDataPoint(0))             // bullish signal on this bar
+{
+    double level = trend.Bullish[0];               // price level of the up-triangle (bar low − 1 tick)
+}
+if (trend.Bearish.IsValidDataPoint(0))             // bearish signal on this bar
+{
+    double level = trend.Bearish[0];               // price level of the down-triangle (bar high + 1 tick)
+}
 ```
+
+| Series | Plot index | Meaning |
+|---|---|---|
+| `Bullish` | `Values[0]` | Set only on bars with a bullish signal; value = price level of the signal |
+| `Bearish` | `Values[1]` | Set only on bars with a bearish signal; value = price level of the signal |
+
+Notes:
+- Bars with no signal hold no value, so always test with `IsValidDataPoint(0)` (not `> 0`).
+- Signals start after 180 bars of history; keep `BarsRequiredToTrade` at 200 or more.
+- Indicators calculate on bar close.
+- You can combine several indicators, for example count how many of the 30 are bullish on the current bar.
 
 Available indicators: `Wealth101TrendStarter`, `Wealth102TrendContinuation`, `Wealth103SupportResistance`,
 `Wealth104MarketConfusion`, `Wealth105Macd`, `Wealth106Stochastics` … `Wealth110Stochastics`,
