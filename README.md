@@ -1,5 +1,7 @@
 # WealthPower – NinjaTrader 8 Developer Samples
 
+**▶ [Get NinjaTrader 8 FREE](https://ninjatraderdomesticvendor.sjv.io/wealthtechnical)** · [Developer program video](https://www.youtube.com/watch?v=EONWc5tTWME)
+
 Sample NinjaScript (C#) code showing how to build **add-ons, strategies and scanners on top of the 30 WealthPower indicators** for NinjaTrader 8.
 
 > **Developer program:** eligible developers, brokers and fund houses get **free access** to all 30 WealthPower indicators.
@@ -16,7 +18,7 @@ Sample NinjaScript (C#) code showing how to build **add-ons, strategies and scan
 
 ## Requirements
 
-1. **NinjaTrader 8** (free download for charting and simulation).
+1. **NinjaTrader 8** – [free download](https://ninjatraderdomesticvendor.sjv.io/wealthtechnical) for charting and simulation ([video guide](https://www.youtube.com/watch?v=mFkVCLbghkY)).
 2. **WealthPower indicators** installed in NinjaTrader 8:
    - 3-day free trial, or
    - free developer access for eligible developers — [apply here](https://www.wealthtechnical.com/developers-area.html).
@@ -84,7 +86,7 @@ The **WealthPower indicators themselves are proprietary** software of WealthTech
 
 Trading involves substantial risk of loss. These samples are for education and development only and are not
 investment advice or a recommendation to trade. Test in simulation first. Past or hypothetical performance does not
-guarantee future results. NinjaTrader® is a registered trademark of NinjaTrader Group, LLC.
+guarantee future results. NinjaTrader® is a registered trademark of NinjaTrader Group, LLC. WealthTechnical LLP is an Ecosystem Vendor of NinjaTrader Group LLC. The NinjaTrader link on this page is our referral link – we may earn a commission if you sign up through it, at no cost to you.
 
 ---
 © 2014–2026 WealthTechnical LLP · https://www.wealthtechnical.com · wealth@wealthtechnical.com
