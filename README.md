@@ -86,7 +86,7 @@ The **WealthPower indicators themselves are proprietary** software of WealthTech
 
 Trading involves substantial risk of loss. These samples are for education and development only and are not
 investment advice or a recommendation to trade. Test in simulation first. Past or hypothetical performance does not
-guarantee future results. NinjaTrader® is a registered trademark of NinjaTrader Group, LLC. WealthTechnical LLP is an Ecosystem Vendor of NinjaTrader Group LLC. The NinjaTrader link on this page is our referral link – we may earn a commission if you sign up through it, at no cost to you.
+guarantee future results. NinjaTrader® is a registered trademark of NinjaTrader Group, LLC. WealthTechnical LLP is an Ecosystem Vendor of NinjaTrader Group LLC. The NinjaTrader link on this page is our referral link.
 
 ---
 © 2014–2026 WealthTechnical LLP · https://www.wealthtechnical.com · wealth@wealthtechnical.com
