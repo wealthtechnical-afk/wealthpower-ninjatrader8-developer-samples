@@ -1,6 +1,6 @@
 # WealthPower – NinjaTrader 8 Developer Samples
 
-**▶ [Get NinjaTrader 8 FREE](https://ninjatraderdomesticvendor.sjv.io/wealthtechnical)** · [Developer program video](https://www.youtube.com/watch?v=EONWc5tTWME) · **[WealthPower – lifetime USD 300 / free trial](https://www.wealthtechnical.com/wealthpower/)** · [WealthPower in 90 seconds (video)](https://youtu.be/P_JH1lPWzvE)
+**▶ [Get NinjaTrader 8 FREE](https://ninjatraderdomesticvendor.sjv.io/wealthtechnical)** · [Developer program video](https://www.youtube.com/watch?v=EONWc5tTWME) · **[WealthPower – lifetime USD 300 / free trial](https://www.wealthtechnical.com/wealthpower/)** · [WealthPower in 90 seconds (video)](https://youtu.be/TQWsIsAziIw)
 
 Sample NinjaScript (C#) code showing how to build **add-ons, strategies and scanners on top of the 30 WealthPower indicators** for NinjaTrader 8.
 
